@@ -21,11 +21,11 @@ fun main(){
     var x = FilmList.size
 
     MovieList.forEach(){
-        it.Trailer()
+        it.trailer()
     }
 
     while (x != 0){
-        FilmList[x-1].AboutFilm()
+        FilmList[x-1].aboutFilm()
         x--
     }
 

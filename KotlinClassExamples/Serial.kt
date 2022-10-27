@@ -2,36 +2,40 @@ package com.KotlinClassExamples
 
 abstract class Serial(type: TypeOfFilm) : CinematicWorkOfArt(type) {
 
-    override fun NameOfFilm()
+    override fun nameOfFilm()
     {
-        super.NameOfFilm()
+        super.nameOfFilm()
         print("serial : ")
     }
 
-    abstract fun YearOfReleaseLastSeries() : Int
+    abstract fun yearOfReleaseLastSeries() : Int
 
-    abstract fun NumOfSeason() : Int
+    abstract fun numOfSeason() : Int
 
-    abstract fun NumOfSeries()
+    abstract fun numOfSeries()
 
-    private fun AboutSeason(){
-        val y = NumOfSeason()
+    private fun aboutSeason(){
+        val y = numOfSeason()
         for (i in 1..y){
             println("In $i season about...")
         }
 
     }
 
-    open fun AboutSerial()
+    open fun aboutSerial()
     {
-        NameOfFilm();
+        nameOfFilm();
         println(type)
-        println("Genre : " + Genre())
-        NumOfSeason()
-        NumOfSeries()
-        println("Year of release : " + YearOfRelease() + " - " + YearOfReleaseLastSeries())
-        ShortDescription()
+        println("Genre : " + genre())
+        // тут в println()  используется именно как функция genre(), а не как переменная
+        // и при написании в коде  println("Genre : $genre()") - компилятор ругается
+        // Function invocation 'genre()' expected
+        numOfSeason()
+        numOfSeries()
+        println("Year of release : " + yearOfRelease() + " - " + yearOfReleaseLastSeries())
+        // тут та же ситуация(
+        shortDescription()
         println("_______________")
-        AboutSeason()
+        aboutSeason()
     }
 }
