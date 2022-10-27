@@ -2,32 +2,28 @@ package com.KotlinClassExamples
 
 class FilmMain(type: TypeOfFilm, private val name : String, private val Year : Int,
                private val genre : String) : Film(type), Video {
-    override fun NameOfFilm() {
-        super.NameOfFilm()
+    override fun nameOfFilm() {
+        super.nameOfFilm()
         println(name)
     }
 
-    override fun YearOfRelease(): Int {
-        return Year
-    }
+    override fun yearOfRelease(): Int = Year
 
-    override fun ShortDescription() {
+    override fun shortDescription() {
         println("Something inform about movie")
     }
 
-    override fun Genre(): String {
-        return genre
+    override fun genre(): String = genre
+
+    override fun aboutFilm() {
+        super.aboutFilm()
     }
 
-    override fun AboutFilm() {
-        super.AboutFilm()
-    }
-
-    override fun Trailer() {
+    override fun trailer() {
         println("watch the trailer '$name'")
     }
 
-    override fun WatchTheMovie() {
+    override fun watchTheMovie() {
         println("watch the '$name'")
     }
 }
