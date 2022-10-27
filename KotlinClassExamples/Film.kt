@@ -2,18 +2,18 @@ package com.KotlinClassExamples
 
 abstract class Film(type: TypeOfFilm) : CinematicWorkOfArt(type) {
 
-    override fun NameOfFilm()
+    override fun nameOfFilm()
     {
-        super.NameOfFilm()
+        super.nameOfFilm()
         print("film : ")
     }
 
-    open fun AboutFilm()
+    open fun aboutFilm()
     {
-        NameOfFilm();
+        nameOfFilm();
         println(type)
-        println("Genre : " + Genre())
-        println("Year of release : "+ YearOfRelease())
-        ShortDescription()
+        println("Genre : " + genre())
+        println("Year of release : "+ yearOfRelease())
+        shortDescription()
     }
 }
