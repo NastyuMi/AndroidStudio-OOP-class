@@ -12,8 +12,8 @@ abstract class Film(type: TypeOfFilm) : CinematicWorkOfArt(type) {
     {
         nameOfFilm();
         println(type)
-        println("Genre : " + genre())
-        println("Year of release : "+ yearOfRelease())
+        println("Genre : ${genre()}")
+        println("Year of release : ${yearOfRelease()}")
         shortDescription()
     }
 }

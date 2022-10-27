@@ -26,14 +26,13 @@ abstract class Serial(type: TypeOfFilm) : CinematicWorkOfArt(type) {
     {
         nameOfFilm();
         println(type)
-        println("Genre : " + genre())
+        println("Genre : ${genre()}")
         // тут в println()  используется именно как функция genre(), а не как переменная
         // и при написании в коде  println("Genre : $genre()") - компилятор ругается
         // Function invocation 'genre()' expected
         numOfSeason()
         numOfSeries()
-        println("Year of release : " + yearOfRelease() + " - " + yearOfReleaseLastSeries())
-        // тут та же ситуация(
+        println("Year of release : ${yearOfRelease()} - ${yearOfReleaseLastSeries()}")
         shortDescription()
         println("_______________")
         aboutSeason()
