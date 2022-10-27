@@ -1,7 +1,7 @@
 package com.KotlinClassExamples
 
 interface Video {
-    fun Trailer()
+    fun trailer()
 
-    fun WatchTheMovie()
+    fun watchTheMovie()
 }
