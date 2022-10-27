@@ -2,16 +2,16 @@ package com.KotlinClassExamples
 
 abstract class CinematicWorkOfArt (val type: TypeOfFilm) {
 
-    open fun NameOfFilm()
+    open fun nameOfFilm()
     {
         print("Title of a ($type) ")
     }
 
-    abstract fun YearOfRelease() : Int
+    abstract fun yearOfRelease() : Int
 
-    abstract fun  ShortDescription()
+    abstract fun  shortDescription()
 
-    abstract fun  Genre() : String
+    abstract fun  genre() : String
 
     enum class TypeOfFilm
     {
